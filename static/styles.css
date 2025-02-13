@@ -1,0 +1,11 @@
+.collage-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-items: stretch;
+    animation: scroll-animation 12s linear infinite;
+}
+@keyframes scroll-animation {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
